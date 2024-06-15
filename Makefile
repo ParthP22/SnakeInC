@@ -9,11 +9,8 @@ LDLIBS = -lmingw32 -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf
 
 main: main.o
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
-
-
-
+	rm -f *.o
 
 clean:
-	rm -f main.o
-	rm -f main.exe
-	rm -f a.exe
+	rm -f *.o
+	rm -f *.exe
