@@ -1,5 +1,7 @@
 # SnakeInC
 
+Created the classic game of Snake in the C programming language using SDL2. You can select either a multicolored rainbow snake or the normal green snake when playing.
+
 Update: 6/15/2024
 
 My first and most recent commit for this project was on July 26th, 2023. I didn't understand how to use Git back then, so I did not regularly commit my changes.
