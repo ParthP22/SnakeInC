@@ -4,7 +4,7 @@ LDFLAGS = -L./lib/
 LDLIBS = -lmingw32 -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf
 OBJ = main.o game_state.o game_objects.o
 HEADERS = main.h game_state.h game_objects.h
-TARGET = main.exe
+TARGET = snake-in-c-v1.0.0.exe
 
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c -o $@ $<
