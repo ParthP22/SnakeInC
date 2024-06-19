@@ -22,7 +22,6 @@ int main(int argc, char** argv) {
 	//game.apple = (Apple*)malloc(sizeof(Apple));
 	//game.snake = (Snake*)malloc(sizeof(Snake));
 	//draw_grid(&game);
-	init_objects(&game);
 	
 	//draw_grid(&game);
 	while (!done) {

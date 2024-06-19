@@ -40,6 +40,6 @@ void render_frame(Game_State* game);
 bool keyboard_control(SDL_Window* window, Game_State* game, SDL_Event* event);
 bool start_screen(SDL_Window* window, Game_State* game, SDL_Event* event);
 void start_game(SDL_Window* window, Game_State* game);
-bool game_over(Game_State* game);
+void game_over(Game_State* game);
 
 #endif

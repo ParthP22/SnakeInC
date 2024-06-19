@@ -39,7 +39,7 @@ void init_objects(Game_State* game);
 void move(Game_State* game);
 void spawn_apple(Game_State* game);
 void eat_apple(Game_State* game);
-void collision_detection(Game_State* game);
+bool collision_detection(Game_State* game);
 void free_objects(Game_State* game);
 
 #endif

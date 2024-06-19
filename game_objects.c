@@ -178,7 +178,7 @@ bool collision_detection(Game_State* game) {
 	}
 	//eat_apple(game);
 	game->running = !(snake->x[0] < 0 ||
-		snake->x[0] > LENGTH ||
+		snake->x[0] > LENGTH - 1 ||
 		snake->y[0] < 0 + UNIT_SIZE * 3 ||
 		snake->y[0] > HEIGHT + UNIT_SIZE * 3);
 	eat_apple(game);

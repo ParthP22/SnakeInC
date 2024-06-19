@@ -328,13 +328,10 @@ bool start_screen(SDL_Window* window, Game_State* game, SDL_Event* event) {
 
 void start_game(SDL_Window* window, Game_State* game) {
 	game->running = true;
-	init_objects(game->snake,game->apple);
-
-	draw_grid(window,game);
-
+	init_objects(game);
 }
 
-bool game_over(Game_State* game) {
+void game_over(Game_State* game) {
 	if (!(game->running)) {
 		SDL_SetRenderDrawColor(game->renderer,0,0,0,255);
 		SDL_RenderClear(game->renderer);
