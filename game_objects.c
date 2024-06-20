@@ -82,12 +82,12 @@ void init_objects(Game_State* game) {
 	game->apple->mc_apple = SDL_CreateTextureFromSurface(game->renderer,surface);
 	SDL_FreeSurface(surface);
 
-	game->font[0] = TTF_OpenFont("C:\\Users\\bapa7\\Documents\\C Stuff\\VSCodeProjects\\SnakeInC\\Fonts\\ARCADECLASSIC.ttf", 40);
+	game->font[0] = TTF_OpenFont(".\\Fonts\\ARCADECLASSIC.ttf", 40);
 	if (game->font[0] == NULL) {
 		printf("Failed to open font file: %s", TTF_GetError());
 	}
 
-	game->font[1] = TTF_OpenFont("C:\\Users\\bapa7\\Documents\\C Stuff\\VSCodeProjects\\SnakeInC\\Fonts\\ARCADECLASSIC.ttf", 20);
+	game->font[1] = TTF_OpenFont(".\\Fonts\\ARCADECLASSIC.ttf", 20);
 	if (game->font[1] == NULL) {
 		printf("Failed to open font file: %s", TTF_GetError());
 	}
