@@ -1,4 +1,4 @@
-#include "game_objects.h"
+#include "game/game_objects.h"
 
 
 void init_objects(Game_State* game) {
@@ -73,21 +73,21 @@ void init_objects(Game_State* game) {
 	}
 	SDL_Surface* surface = NULL;
 
-	surface = IMG_Load("mc_apple_png_file.png");
+	surface = IMG_Load("assets\\images\\mc_apple_png_file.png");
 	if (surface == NULL) {
-		printf("Cannot find mc_apple_png_file.png");
-		SDL_Quit();
-		exit(1);
+		fprintf(stderr,"Cannot find mc_apple_png_file.png");
+		//SDL_Quit();
+		//exit(1);
 	}
 	game->apple->mc_apple = SDL_CreateTextureFromSurface(game->renderer,surface);
 	SDL_FreeSurface(surface);
 
-	game->font[0] = TTF_OpenFont(".\\Fonts\\ARCADECLASSIC.ttf", 40);
+	game->font[0] = TTF_OpenFont("assets\\fonts\\ARCADECLASSIC.ttf", 40);
 	if (game->font[0] == NULL) {
 		printf("Failed to open font file: %s", TTF_GetError());
 	}
 
-	game->font[1] = TTF_OpenFont(".\\Fonts\\ARCADECLASSIC.ttf", 20);
+	game->font[1] = TTF_OpenFont("assets\\fonts\\ARCADECLASSIC.ttf", 20);
 	if (game->font[1] == NULL) {
 		printf("Failed to open font file: %s", TTF_GetError());
 	}
