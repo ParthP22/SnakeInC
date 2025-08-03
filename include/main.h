@@ -10,11 +10,11 @@
 #include <stdbool.h>
 #include <string.h>
 #define SDL_MAIN_HANDLED
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
-#include "game_state.h"
-#include "game_objects.h"
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
+#include <SDL/SDL_ttf.h>
+#include "game/game_state.h"
+#include "game/game_objects.h"
 
 
 
