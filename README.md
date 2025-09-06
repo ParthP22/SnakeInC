@@ -9,3 +9,5 @@ I also did not know how to correctly use Makefiles to compile this program, so I
 
 Now that I am learning how to create and run Makefiles, I am restructuring this whole project so that it is not reliant on Visual Studio.
 I will likely be making more changes to it as well, so Git will be used more frequently to track my progress.
+
+Update 9/5/2025
